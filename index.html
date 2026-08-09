@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>全国大学英语四、六级考试（含口试）成绩查询</title>
+  <style>
+    @charset "UTF-8";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100% !important;
+  text-size-adjust: 100% !important;
+}
+
+body {
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #fff;
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100% !important;
+  text-size-adjust: 100% !important;
+  overflow-x: hidden;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+a {
+  display: inline-block;
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover,
+a:active,
+button:hover,
+button:active,
+input:hover,
+select:hover,
+textarea:hover,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none !important;
+}
+
+a:focus-visible {
+  outline: none;
+  outline-offset: 0;
+}
+
+img {
+  display: inline-block;
+  border: none;
+}
+
+input, button, select {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: inherit;
+  margin: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, [type=button], [type=submit] {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+hr {
+  border: none;
+}
+
+::selection {
+  background: #cce5ff;
+}
+
+@media (max-width: 768px) {
+  body {
+    position: relative;
+    font-family: "微软雅黑", NeeaSimsun-Regular;
+    color: #000;
+  }
+}
+@media (min-width: 769px) {
+  body {
+    font-family: "Microsoft yahei", Arial, "Times New Roman", Times, serif, NeeaSimsun-Regular;
+    color: #404040;
+  }
+}
+body {
+  width: 100%;
+  font-size: 0.875rem;
+  word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 999;
+  }
+}
+@media (min-width: 769px) {
+  .page-header {
+    position: relative;
+    width: 75rem;
+    margin: 0 auto;
+    text-align: left;
+    overflow: hidden;
+    clear: both;
+  }
+}
+@media (min-width: 769px) {
+  .page-header .dt-header-top {
+    position: relative;
+    margin: 0 auto;
+    height: 6.625rem;
+  }
+}
+@media (max-width: 768px) {
+  .page-header .dt-header-top .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.625rem;
+  }
+}
+@media (min-width: 769px) {
+  .page-header .dt-header-top .header-top {
+    float: left;
+    margin-top: 0.9375rem;
+  }
+}
+@media (min-width: 769px) {
+  .page-header .dt-header-top .header-top .header-top-logo {
+    float: left;
+  }
+}
+@media (max-width: 768px) {
+  .page-header .dt-header-top .header-top .header-top-logo img {
+    width: 9.125rem;
+    max-height: 2.25rem;
+  }
+}
+@media (min-width: 769px) {
+  .page-header .dt-header-top .header-top .header-top-logo img {
+    width: 18.4375rem;
+  }
+}
+@media (min-width: 769px) {
+  .page-header .dt-header-top .header-top .header-top-action {
+    display: none;
+  }
+}
+.page-header .dt-header-top .header-top .header-top-action {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.page-header .dt-header-top .header-top .header-top-action .header-top-action-more,
+.page-header .dt-header-top .header-top .header-top-action .header-top-action-search {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.page-header .dt-header-top .header-top .header-top-action .header-top-action-search {
+  background: url("../img//search.png") 100% no-repeat;
+  background-size: cover;
+  margin-right: 0.9375rem;
+}
+.page-header .dt-header-top .header-top .header-top-action .header-top-action-more {
+  background: url("../img//menu.png") 100% no-repeat;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .page-header .dt-header-top .header-about {
+    display: none;
+  }
+}
+.page-header .dt-header-top .header-about {
+  float: right;
+  position: relative;
+  width: 31.25rem;
+  padding-top: 0.625rem;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  color: #313F61;
+}
+.page-header .dt-header-top .header-about .header-about-container {
+  position: absolute;
+  right: 0;
+}
+.page-header .dt-header-top .header-about .header-about-container a {
+  color: #313F61;
+  margin: 0 0.25rem;
+}
+@media (max-width: 768px) {
+  .page-header .header-search {
+    display: none;
+  }
+}
+.page-header .header-search {
+  position: absolute;
+  top: 3.125rem;
+  right: 0;
+}
+.page-header .header-search input[type=submit] {
+  float: right;
+  width: 2rem;
+  height: 1.75rem;
+  background: url("../img//search-dt.jpg") no-repeat left top;
+  border: none;
+  cursor: pointer;
+}
+.page-header .header-search input[type=text] {
+  float: right;
+  width: 14.25rem;
+  height: 1.75rem;
+  padding: 0 0.3125rem;
+  border: 1px solid #999;
+  border-bottom-color: #e5e5e5;
+  border-right-color: #e5e5e5;
+  line-height: 1.75rem;
+  color: #666;
+}
+@media (max-width: 768px) {
+  .page-header .header-nav {
+    width: 100%;
+    overflow: auto;
+  }
+}
+@media (min-width: 769px) {
+  .page-header .header-nav {
+    height: 2.875rem;
+    background-color: #e7e8eb;
+    border-bottom: solid 3px #003e7d;
+    font-weight: 700;
+  }
+}
+@media (max-width: 768px) {
+  .page-header .header-nav .header-nav-icon {
+    display: none;
+  }
+}
+.page-header .header-nav .header-nav-icon {
+  float: left;
+  width: 4.375rem;
+  height: 2.875rem;
+  background: #ff7f00;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .page-header .header-nav .header-nav-list {
+    display: flex;
+    justify-content: space-around;
+    width: 230%;
+    height: 2.25rem;
+    background: #003f7e;
+    font-size: 1rem;
+    line-height: 2.25rem;
+  }
+  .page-header .header-nav .header-nav-list a {
+    color: #fff;
+  }
+}
+@media (min-width: 769px) {
+  .page-header .header-nav .header-nav-list {
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 69.0625rem;
+    padding: 0 0 0 1.25rem;
+    line-height: 2.875rem;
+  }
+  .page-header .header-nav .header-nav-list li {
+    cursor: pointer;
+  }
+  .page-header .header-nav .header-nav-list li:first-child, .page-header .header-nav .header-nav-list li:last-child {
+    display: none;
+  }
+  .page-header .header-nav .header-nav-list li:nth-child(6) {
+    color: #ff7f00;
+  }
+  .page-header .header-nav .header-nav-list li:hover {
+    color: #ff7f00;
+  }
+}
+@media (min-width: 769px) {
+  .page-header .header-nav i {
+    display: none;
+  }
+}
+.page-header .header-nav i {
+  position: fixed;
+  top: 3.9063rem;
+  right: 0.3125rem;
+  font-style: inherit;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .page-header .header-bottm {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .page-header .header-bottm {
+    height: 1.875rem;
+    padding-left: 0.9375rem;
+    border-bottom: solid 1px #DDD;
+    line-height: 1.875rem;
+  }
+  .page-header .header-bottm .header-bottom-index::before {
+    content: "";
+    display: inline-block;
+    width: 1.125rem;
+    height: 0.875rem;
+    background: url("../img//dt-page-map.png");
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #003f7e;
+  }
+  .page-header .header-bottm a {
+    color: #000;
+  }
+  .page-header .header-bottm img {
+    vertical-align: middle;
+  }
+  .page-header .header-bottm .header-bottm-right {
+    float: right;
+    width: 50%;
+    text-align: right;
+  }
+  .page-header .header-bottm .header-bottm-right span {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .page-header .header-bottm .header-bottm-right span .header-bottom-right-user {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 0.25rem;
+    color: #003f7e;
+  }
+  .page-header .header-bottm .header-bottm-right span .header-bottom-right-user::before {
+    content: "";
+    width: 1.125rem;
+    height: 1.125rem;
+    background: url("../img//user.png");
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #003f7e;
+  }
+  .page-header .header-bottm .header-bottm-right span .header-bottom-right-logout {
+    margin-left: 0.25rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .page-main {
+    width: 75rem;
+    margin: 0 auto 1.875rem;
+    text-align: left;
+    overflow: hidden;
+    clear: both;
+  }
+}
+@media (max-width: 768px) {
+  .page-main .main-nav .main-nav-container {
+    padding: 0.5rem 0.625rem 0.375rem;
+    border-bottom: 1px solid #eee;
+    font-size: 0.875rem;
+    color: #666;
+  }
+  .page-main .main-nav .main-nav-container a {
+    color: #666;
+  }
+}
+@media (min-width: 769px) {
+  .page-main .main-nav .main-nav-container {
+    height: 1.875rem;
+    padding-left: 0.9375rem;
+    border-bottom: solid 1px #DDD;
+    line-height: 1.875rem;
+  }
+  .page-main .main-nav .main-nav-container .main-nav-index-page::before {
+    content: "";
+    display: inline-block;
+    width: 1.125rem;
+    height: 0.875rem;
+    background: url("../img//dt-page-map.png");
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #003f7e;
+  }
+  .page-main .main-nav .main-nav-container a {
+    color: #000;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-footer {
+    background: #f5f5f5;
+    padding-bottom: 0.625rem;
+  }
+}
+@media (min-width: 769px) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 75rem;
+    height: 6.875rem;
+    margin: 0 auto;
+    padding: 0.625rem 4rem;
+    background: #f4f4f4;
+    border-top: 0.0625rem solid #ccc;
+    font-size: 0.75rem;
+    color: #303D5D;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .page-footer .footer-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.625rem 0 0;
+  }
+  .page-footer .footer-menu li {
+    font-size: 0.875rem;
+    color: #000;
+  }
+  .page-footer .footer-menu li a {
+    margin: 0 0.625rem;
+    font-size: 0.75rem;
+    color: #303D5D;
+  }
+}
+@media (min-width: 769px) {
+  .page-footer .footer-menu {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .page-footer .footer-content {
+    padding: 0.625rem 0 0;
+  }
+}
+.page-footer .footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 769px) {
+  .page-footer .footer-content .footer-content-img {
+    min-width: 4rem;
+    min-height: 4rem;
+    position: relative;
+    left: -0.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .page-footer .footer-content .footer-content-img img {
+    max-width: 100%;
+    width: 8vmin;
+    height: 8vmin;
+  }
+}
+@media (min-width: 769px) {
+  .page-footer .footer-content .footer-content-detail {
+    height: 3.75rem;
+    text-align: left;
+  }
+}
+@media (max-width: 768px) {
+  .page-footer .footer-content .footer-content-detail .footer-content-detail-title {
+    font-size: 3vmin;
+    color: #303d5d;
+    line-height: 1.6;
+  }
+}
+@media (min-width: 769px) {
+  .page-footer .footer-content .footer-content-detail .footer-content-detail-title {
+    font-size: 0.75rem;
+    color: #303d5d;
+  }
+}
+@media (max-width: 768px) {
+  .page-footer .footer-content .footer-content-detail .footer-content-detail-title .footer-content-detail-title-text {
+    margin: 0.3125rem;
+  }
+}
+@media (max-width: 768px) {
+  .page-footer .footer-content .footer-content-detail .footer-content-detail-container {
+    font-size: 3vmin;
+    color: #303D5D;
+    line-height: 1.6;
+  }
+}
+@media (min-width: 769px) {
+  .page-footer .footer-content .footer-content-detail .footer-content-detail-container {
+    color: #303d5d;
+  }
+}
+@media (max-width: 768px) {
+  .page-footer .footer-content .footer-content-detail .footer-content-detail-container .footer-content-detail-item .footer-content-detail-text {
+    margin: 0.3125rem;
+  }
+}
+@media (min-width: 769px) {
+  .page-footer .footer-content .footer-content-detail .footer-content-detail-container .footer-content-detail-item .footer-content-detail-text {
+    height: 1.25rem;
+    line-height: 1.25rem;
+    color: #303d5d;
+  }
+}
+@media (max-width: 768px) {
+  .page-footer .footer-content .footer-content-detail .footer-content-detail-container .footer-content-detail-item img {
+    width: 1rem;
+    height: 1rem;
+    margin-top: -3px;
+  }
+}
+@media (min-width: 769px) {
+  .page-footer .footer-content .footer-content-detail .footer-content-detail-container .footer-content-detail-item img {
+    height: 0.875rem;
+    margin: 0 0.25rem 0 0.75rem;
+  }
+}
+.page-footer .footer-content .footer-content-detail .footer-content-detail-container .footer-content-detail-item img {
+  vertical-align: middle;
+}
+@media (max-width: 768px) {
+  .page-footer .footer-content .footer-content-detail .footer-content-detail-tips {
+    display: none;
+  }
+}
+.page-footer .footer-content .footer-content-detail .footer-content-detail-tips {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #303d5d;
+  text-align: justify;
+}
+@media (max-width: 768px) {
+  .page-footer .footer-link {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .page-footer .footer-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  .page-footer .footer-link .footer-link--title span {
+    padding: 0.3125rem 0.5rem 0.3125rem 0;
+  }
+  .page-footer .footer-link .footer-link-content {
+    display: flex;
+    gap: 4rem;
+    margin-top: 0.5rem;
+  }
+}
+@charset "UTF-8";
+@media (min-width: 769px) {
+  .page-main .main-container {
+    float: left;
+    position: relative;
+    width: 51.25rem;
+    margin: 0 0 1.875rem 0;
+    padding: 0 1.25rem;
+    border-right: solid 1px #ddd;
+    overflow: hidden;
+  }
+}
+@media (max-width: 768px) {
+  .page-main .main-container .main-title {
+    margin: 1.2vmin;
+    padding: 0 3vmin;
+    font-size: 4.53333333vmin;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #003f7e;
+    text-align: center;
+  }
+}
+@media (min-width: 769px) {
+  .page-main .main-container .main-title {
+    height: 1.875rem;
+    margin: 1.875rem 0;
+    font-size: 1.375rem;
+    color: #3083c7;
+    line-height: 1.875rem;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .page-main .main-container .main-form {
+    margin: 3vmin;
+    padding: 3vmin 3vmin 0;
+    border-radius: 1.5vmin;
+    box-shadow: 0 0 1.8vmin rgba(0, 0, 0, 0.2);
+  }
+}
+@media (min-width: 769px) {
+  .page-main .main-container .main-form {
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 769px) {
+  .page-main .main-container .main-form .form-container {
+    width: 32.5rem;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .page-main .main-container .main-form .form-item {
+    margin-bottom: 3.2vmin;
+  }
+  .page-main .main-container .main-form .form-item:nth-child(2) label {
+    width: 4em;
+    text-align-last: justify;
+  }
+}
+@media (min-width: 769px) {
+  .page-main .main-container .main-form .form-item {
+    display: flex;
+    float: left;
+    position: relative;
+    width: 100%;
+    margin-bottom: 2.375rem;
+    clear: both;
+  }
+}
+.page-main .main-container .main-form .form-item label {
+  display: inline-block;
+}
+@media (max-width: 768px) {
+  .page-main .main-container .main-form .form-item label {
+    font-size: 4.26666667vmin;
+    color: #000;
+  }
+}
+@media (min-width: 769px) {
+  .page-main .main-container .main-form .form-item label {
+    float: left;
+    position: relative;
+    width: 8.25rem;
+    height: 1.75rem;
+    line-height: 1.75rem;
+    text-align: right;
+  }
+  .page-main .main-container .main-form .form-item label:after {
+    content: "：";
+    position: absolute;
+  }
+}
+@media (max-width: 768px) {
+  .page-main .main-container .main-form .form-item .form-item-input {
+    padding: 2.4vmin 0 1.2vmin;
+    border-bottom: 0.26666667vmin solid #dadada;
+  }
+}
+@media (min-width: 769px) {
+  .page-main .main-container .main-form .form-item .form-item-input {
+    float: left;
+    height: 1.875rem;
+    margin-left: 1.75rem;
+  }
+}
+@media (max-width: 768px) {
+  .page-main .main-container .main-form .form-item .form-item-input select {
+    width: 100%;
+    background: #fff;
+    border: none;
+    font-size: 4vmin;
+    line-height: 5.2vmin;
+  }
+}
+@media (min-width: 769px) {
+  .page-main .main-container .main-form .form-item .form-item-input select {
+    width: 14.875rem;
+    height: 1.75rem;
+    background: #fff;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%23000' stroke-width='0.9' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 5px center; /* 水平靠右12px，垂直居中 */
+    background-size: 8px;
+    padding: 0 0.3125rem;
+    border: solid 1px #A9A9A9;
+    border-radius: 3px;
+    color: #757575;
+  }
+}
+.page-main .main-container .main-form .form-item .form-item-input select option {
+  color: #000;
+}
+.page-main .main-container .main-form .form-item .form-item-input select {
+  /* 已选有效科目：正常黑色文字 */
+}
+.page-main .main-container .main-form .form-item .form-item-input select:valid {
+  color: #757575;
+}
+@media (max-width: 768px) {
+  .page-main .main-container .main-form .form-item .form-item-input .input-name,
+  .page-main .main-container .main-form .form-item .form-item-input .input-id {
+    width: 100%;
+    background: #fff;
+    border: none;
+    font-size: 4vmin;
+    color: #333;
+    line-height: 5.2vmin;
+  }
+  .page-main .main-container .main-form .form-item .form-item-input .input-name::placeholder,
+  .page-main .main-container .main-form .form-item .form-item-input .input-id::placeholder {
+    font-size: 3.46666667vmin;
+    color: #b3b3b3;
+  }
+}
+@media (min-width: 769px) {
+  .page-main .main-container .main-form .form-item .form-item-input .input-name,
+  .page-main .main-container .main-form .form-item .form-item-input .input-id {
+    width: 14.875rem;
+    height: 1.75rem;
+    background: #fff;
+    padding: 0 0.3125rem;
+    border: solid 1px #a9a9a9;
+    border-radius: 0.3125rem;
+    font-size: 0.8125rem;
+    line-height: 1.75rem;
+    color: #000;
+  }
+  .page-main .main-container .main-form .form-item .form-item-input .input-name::placeholder,
+  .page-main .main-container .main-form .form-item .form-item-input .input-id::placeholder {
+    font-size: 0.8125rem;
+    color: #b3b3b3;
+  }
+}
+@media (max-width: 768px) {
+  .page-main .main-container .main-form .form-item .form-item-input-extra {
+    margin-top: 0.6vmin;
+    font-size: 3.6vmin;
+    color: #a3a3a3;
+    text-align: right;
+  }
+  .page-main .main-container .main-form .form-item .form-item-input-extra a {
+    margin-left: 1.5vmin;
+    font-size: 3.6vmin !important;
+    color: #003f7e;
+  }
+}
+@media (min-width: 769px) {
+  .page-main .main-container .main-form .form-item .form-item-input-extra {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .page-main .main-container .main-form .form-btn {
+    clear: both;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .page-main .main-container .main-form .form-btn button[type=submit] {
+    display: block;
+    width: 80%;
+    height: 9vmin;
+    background: #003f7e;
+    margin: auto;
+    border: none;
+    border-radius: 1.5vmin;
+    font-size: 4vmin;
+    line-height: 9vmin;
+    color: #fff;
+    text-align: center;
+  }
+  .page-main .main-container .main-form .form-btn button[type=submit] span {
+    display: inline-block;
+    width: 3em;
+    text-align-last: justify;
+  }
+}
+@media (min-width: 769px) {
+  .page-main .main-container .main-form .form-btn button[type=submit] {
+    width: 5rem;
+    height: 1.875rem;
+    background: #01ADEF;
+    margin: 0 0.3125rem;
+    border: 0;
+    border-radius: 0.1875rem;
+    line-height: 1.875rem;
+    color: #fff;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .page-main .main-container .main-form .form-btn button[type=reset] {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .page-main .main-container .main-form .form-btn button[type=reset] {
+    width: 5rem;
+    height: 1.875rem;
+    background: #01ADEF;
+    margin: 0 0.3125rem;
+    border: 0;
+    border-radius: 3px;
+    line-height: 1.875rem;
+    color: #fff;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .page-main .main-container .main-form .dt-form-item-input-extra {
+    display: none;
+  }
+}
+.page-main .main-container .main-form .dt-form-item-input-extra {
+  position: absolute;
+  left: 35.5rem;
+  top: 7.875rem;
+}
+.page-main .main-container .main-form .dt-form-item-input-extra .dt-input-extra-container {
+  position: relative;
+  width: 14.0625rem;
+  background: #f9fdfe;
+  padding: 0.625rem;
+  border: 0.0625rem solid #beceeb;
+  border-radius: 0.3125rem;
+}
+.page-main .main-container .main-form .dt-form-item-input-extra .dt-input-extra-container .extra-top {
+  position: absolute;
+  left: -1.875rem;
+  top: 1.875rem;
+  width: 0;
+  height: 0;
+  border-width: 0.9375rem;
+  border-style: dashed solid dashed dashed;
+  border-color: transparent #beceeb transparent transparent;
+  font-size: 0;
+}
+.page-main .main-container .main-form .dt-form-item-input-extra .dt-input-extra-container .extra-bot {
+  position: absolute;
+  left: -1.75rem;
+  top: 1.875rem;
+  width: 0;
+  height: 0;
+  border-width: 0.9375rem;
+  border-style: dashed solid dashed dashed;
+  border-color: transparent #ffffff transparent transparent;
+  font-size: 0;
+}
+.page-main .main-container .main-form .dt-form-item-input-extra .dt-input-extra-container .extra-content {
+  position: relative;
+}
+.page-main .main-container .main-form .dt-form-item-input-extra .dt-input-extra-container .extra-content .extra-circle-l {
+  position: absolute;
+  top: 0.3125rem;
+  left: 0;
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  background: #fff;
+  border: 1px solid #5fb5d6;
+  border-radius: 0.75rem;
+  line-height: 0.75rem;
+}
+.page-main .main-container .main-form .dt-form-item-input-extra .dt-input-extra-container .extra-content .extra-circle-l .extra-circle-s {
+  position: absolute;
+  left: 0.125rem;
+  top: 0.125rem;
+  width: 0.375rem;
+  height: 0.375rem;
+  background: #5fb5d6;
+  border-radius: 0.375rem;
+}
+.page-main .main-container .main-form .dt-form-item-input-extra .dt-input-extra-container .extra-content .extra-text {
+  padding: 0 0 0 1.25rem;
+  line-height: 180%;
+  font-size: 0.8125rem;
+  color: #666;
+}
+.page-main .main-container .main-form .dt-form-item-input-extra .dt-input-extra-container .extra-content .extra-text a {
+  display: inline-block;
+  color: #01adef;
+}
+@media (max-width: 768px) {
+  .page-main .main-container .main-form .main-form-notice {
+    margin: 3vmin 0;
+    font-size: 3.46666667vmin;
+    color: #ff9919;
+    text-align: justify;
+  }
+  .page-main .main-container .main-form .main-form-notice div {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .page-main .main-container .main-form .main-form-notice {
+    width: 37.5rem;
+    background: #FAFAFA;
+    margin: 1.875rem auto;
+    padding: 0.625rem;
+    border-left: 0.3125rem solid #D0E0EE;
+    border-radius: 0 0.125rem 0.125rem 0;
+    line-height: 1.6;
+  }
+  .page-main .main-container .main-form .main-form-notice span {
+    line-height: 1.8;
+  }
+  .page-main .main-container .main-form .main-form-notice p:nth-child(n+3) {
+    display: none;
+  }
+}
+.page-main .main-container .main-form .main-form-question {
+  border-top: 0.4vmin solid #dadada;
+  font-size: 4vmin;
+  line-height: 10vmin;
+  color: #003f7e;
+  text-align: center;
+}
+.page-main .main-container .main-form .main-form-question a {
+  color: #003f7e;
+}
+@media (min-width: 769px) {
+  .page-main .main-container .main-form .main-form-question {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .page-main .main-container .main-form .main-form-history {
+    margin: 3vmin 3vmin 6vmin;
+    padding: 3vmin;
+    border-radius: 1.5vmin;
+  }
+  .page-main .main-container .main-form .main-form-history p {
+    margin: 0 0 3vmin;
+    font-size: 4vmin;
+    color: black;
+    text-align: justify;
+  }
+  .page-main .main-container .main-form .main-form-history a {
+    display: block;
+    width: 80%;
+    height: 9vmin;
+    background: #003f7e;
+    margin: auto;
+    border: none;
+    border-radius: 1.5vmin;
+    font-size: 4vmin;
+    line-height: 9vmin;
+    color: #fff;
+    text-align: center;
+  }
+}
+@media (min-width: 769px) {
+  .page-main .main-container .main-form .main-form-history {
+    width: 37.5rem;
+    margin: 1.25rem auto;
+  }
+  .page-main .main-container .main-form .main-form-history-container {
+    padding: 0.9375rem;
+    border: 0.0625rem solid #ddd;
+  }
+  .page-main .main-container .main-form .main-form-history-container p {
+    height: 3.25rem;
+    font-size: 0.875rem;
+    text-align: justify;
+  }
+  .page-main .main-container .main-form .main-form-history-container a {
+    display: block;
+    width: 7.5rem;
+    height: 1.875rem;
+    background: #01ADEF;
+    margin: auto;
+    border-radius: 0.1875rem;
+    font-size: 0.875rem;
+    line-height: 1.875rem;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-side {
+    display: none;
+  }
+}
+.main-side {
+  float: left;
+  width: 20rem;
+  margin: 1.25rem 0 0 1.25rem;
+  font-size: 0.875rem;
+  color: #404040;
+  text-align: left;
+}
+.main-side .main-side-contact,
+.main-side .main-side-question,
+.main-side .main-side-operation {
+  border-bottom: 1px solid #dddddd;
+}
+.main-side .main-side-contact .main-side-title,
+.main-side .main-side-question .main-side-title,
+.main-side .main-side-operation .main-side-title {
+  border-bottom-width: medium;
+  border-bottom-style: none;
+  border-bottom-color: currentcolor;
+  margin: 0.5rem 0 0;
+  padding: 0.5rem 0 1.25rem 1rem;
+  font-size: 1.125rem;
+}
+.main-side .main-side-contact .main-side-title::before,
+.main-side .main-side-question .main-side-title::before,
+.main-side .main-side-operation .main-side-title::before {
+  content: "";
+  display: inline-block;
+  width: 0.625rem;
+  height: 0.625rem;
+  margin-right: 1rem;
+  background: #fe8500;
+}
+.main-side .main-side-contact .main-side-item,
+.main-side .main-side-question .main-side-item,
+.main-side .main-side-operation .main-side-item {
+  margin-bottom: 1.25rem;
+  padding-left: 1.25rem;
+  line-height: 1.25rem;
+}
+.main-side .main-side-question .main-side-item {
+  cursor: pointer;
+}
+.main-side .main-side-contact img {
+  vertical-align: middle;
+}
+.main-side .main-side-contact .main-side-item {
+  padding-left: 1rem;
+}
+.main-side .main-side-contact .main-side-item span {
+  margin-left: 0.5rem;
+}
+  </style>
+</head>
+<body>
+  <header class="page-header">
+    <div class="dt-header-top">
+      <div class="header-top">
+        <a class="header-top-logo" href="https://www.neea.edu.cn/html1/folder/1508/113-1.htm">
+          <img src="img/logo.png" alt="中国教育考试院">
+        </a>
+
+        <div class="header-top-action">
+          <i class="header-top-action-search"></i>
+          <i class="header-top-action-more"></i>
+        </div>
+      </div>
+
+      <div class="header-about">
+        <span class="header-about-container">
+          <a href="#">关于我们</a>
+          |
+          <a href="#">ENGLISH</a>
+        </span>
+      </div>
+    </div>
+
+    <div class="header-search">
+      <form action="">
+        <input type="submit" value>
+        <input type="text" placeholder="请输入关键字">
+      </form>
+    </div>
+
+    <div class="header-nav">
+      <div class="header-nav-icon">
+        <a href="https://www.neea.edu.cn/">
+          <img src="img/nav-home-dt.jpg" alt="">
+        </a>
+      </div>
+      <ul class="header-nav-list">
+        <li>
+          <a href="https://www.neea.edu.cn/html1/folder/1508/113-1.htm">首页</a>
+        </li>
+        <li>
+          <a href="https://www.neea.edu.cn/html1/category/16093/615-1.htm">考试资讯</a>
+        </li>
+        <li>
+          <a href="https://www.neea.edu.cn/html1/category/1508/151-1.htm">公示公告</a>
+        </li>
+        <li>
+          <a href="https://www.neea.edu.cn/html1/folder/16103/1271-1.htm">考试项目</a>
+        </li>
+        <li>
+          <a href="https://www.neea.edu.cn/html1/folder/1607/298-1.htm">考试报名</a>
+        </li>
+        <li>
+          <a href="https://cjcx.neea.edu.cn/html1/folder/20051/1151-1.htm">成绩查询</a>
+        </li>
+        <li>
+          <a class="active" href="https://zscx.neea.edu.cn/html1/folder/21051/9446-1.htm">证书查询</a>
+        </li>
+        <li>
+          <a href="https://research.neea.edu.cn/">考试研究</a>
+        </li>
+        <li>
+          <a href="https://www.neea.edu.cn/html1/folder/1510/793-1.htm">关于我们</a>
+        </li>
+      </ul>
+      <i>></i>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <div class="main-nav">
+      <div class="main-nav-container">
+        <a class="main-nav-index-page" href="https://www.neea.edu.cn/html1/folder/1508/113-1.htm">首页</a>
+        <span class="main-nav-current-page1">
+          >
+          <a href="https://cjcx.neea.edu.cn/">成绩查询</a>
+        </span>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="main-title">
+        <span><span class="main-title-text">2026年上半年</span>全国大学英语四、六级考试（含口试）成绩查询</span>
+      </div>
+
+      <div class="main-form">
+        <form action="score.html" class="form-container">
+          <!-- 输入框 -->
+          <ul>
+            <li class="form-item">
+              <label class="form-item-label" for="subject">考试科目</label>
+              <div class="form-item-input">
+                <select class="input-subject" id="subject" name="subject" required>
+                  <!-- <option value="" selected disabled hidden>请选择考试科目</option> -->
+                  <option value="CET4" selected>全国大学英语四级考试(CET4)</option>
+                  <option value="CET6">全国大学英语六级考试(CET6)</option>
+                  <!-- <option value="CJT4">全国大学日语四级考试(CJT4)</option>
+                  <option value="CJT6">全国大学日语六级考试(CJT6)</option>
+                  <option value="PHD4">全国大学德语四级考试(PHD4)</option>
+                  <option value="PHD6">全国大学德语六级考试(PHD6)</option>
+                  <option value="CRT4">全国大学俄语四级考试(CRT4)</option>
+                  <option value="CRT6">全国大学俄语六级考试(CRT6)</option>
+                  <option value="TFU4">全国大学法语四级考试(TFU4)</option>
+                  <option value="CET-SET">全国大学英语四、六级口语考试（CET-SET）</option>
+                  <option value="CET">全国大学英语四、六级考试（网考）</option> -->
+                </select>
+              </div>
+            </li>
+            <li class="form-item">
+              <label class="form-item-label" for="uname">姓名</label>
+              <div class="form-item-input">
+                <input
+                  type="text" 
+                  class="input-name"
+                  id="uname" 
+                  name="uname" 
+                  placeholder="姓名超过3个字，可只输入前3个" 
+                  maxlength="4" 
+                  required
+                >
+              </div>
+              <div class="form-item-input-extra">
+                <span>部分生僻字和・支持</span>
+                <a href="#">快捷输入</a>
+              </div>
+            </li>
+            <li class="form-item">
+              <label class="form-item-label" for="id-card">证件号码/准考证号</label>
+              <div class="form-item-input">
+                <input
+                  type="tel"
+                  class="input-id"
+                  id="id-card"
+                  name="id-card"
+                  placeholder="证件号码或15位笔试、口试准考证号"
+                  maxlength="18" 
+                  required
+                >
+              </div>
+            </li>
+          </ul>
+
+          <div class="form-btn">
+            <button type="submit" class="btn-search">
+              <span>查询</span>
+            </button>
+            <button type="reset" class="btn-reset">
+              <span>重置</span>
+            </button>
+          </div>
+        </form>
+
+        <div class="main-form-notice">
+          <span>温馨提示:</span>
+          <p>1. 若考生的口试成绩为不合格，则成绩报告单上不报道其口试成绩。</p>
+          <p>2. 请输入报考时的姓名和证件号码/准考证号进行查询，部分生僻字和“ · ”支持快捷输入。</p>
+        </div>
+
+        <div class="main-form-question">
+          <a href="https://cjcx.neea.edu.cn/html1/folder/21083/9978-1.htm">常见问题</a>
+          | 
+          <a href="#">联系我们</a>
+        </div>
+
+        <div class="dt-form-item-input-extra">
+          <div class="dt-input-extra-container">
+            <div class="extra-top"></div>
+            <div class="extra-bot"></div>
+            <div class="extra-content">
+              <i class="extra-circle-l">
+                <i class="extra-circle-s"></i>
+              </i>
+              <div class="extra-text">
+                部分生僻字和“·”支持快捷输入，例：·、䶮、㭎、䜣、𠅤、㼆、仝等，<a href="#">点击打开输入面板。</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-form-history">
+          <div class="main-form-history-container">
+            <p>查询2005年6月-2025年6月考试成绩，下载2021年6月-2025年6月考试电子成绩报告单（证书）。</p>
+            <a href="#">历史成绩查询</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-side">
+      <div class="main-side-container">
+        <ul class="main-side-operation">
+          <li class="main-side-title">常见问题</li>
+          
+          <li class="main-side-item">
+            <span>Q1：忘记准考证号怎么办？</span>
+          </li>
+          <li class="main-side-item">
+            <span>Q2：为什么笔试成绩为0？</span>
+          </li>
+          <li class="main-side-item">
+            <span>Q3：如对成绩有异议怎么办？</span>
+          </li>
+          <li class="main-side-item">
+            <span>Q4：如何获取本次考试电子成绩报告单？</span>
+          </li>
+          <li class="main-side-item">
+            <span>Q5：如何变更成绩报告单申请种类？</span>
+          </li>
+        </ul>
+
+        <ul class="main-side-question">
+          <li class="main-side-title">操作说明</li>
+          
+          <li class="main-side-item">
+            <span>1、选择考试项目。</span>
+          </li>
+          <li class="main-side-item">
+            <span>2、输入姓名和证件号码/准考证号，点击查询按钮进行查询。</span>
+          </li>
+          <li class="main-side-item">
+            <span>3、如果输入信息正确，对应考试的成绩信息将会在下一个页面列出。</span>
+          </li>
+          <li class="main-side-item">
+            <span>Q4：电子成绩报告单（证书）的查询和下载是否有期限？</span>
+          </li>
+        </ul>
+        
+        <ul class="main-side-contact">
+          <li class="main-side-title">联系方式</li>
+          
+          <li class="main-side-item">
+            <img src="img/dt-icon-net.png" alt="">
+            <span>query@mail.neea.edu.cn</span>
+          </li>
+          <li class="main-side-item">
+            <img src="img/dt-icon-shouji.png" alt="">
+            <span>010-83020302</span>
+          </li>
+          <li class="main-side-item">
+            <img src="img/dt-icon-shijian.png" alt="">
+            <span>工作日 上午:08:30-12:00</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <div class="footer-container">
+      <ul class="footer-menu">
+        <li>
+          <a href="#">网络地图</a>
+          |
+        </li>
+        <li>
+          <a href="https://www.neea.edu.cn/html1/folder/1510/793-1.htm">关于我们</a>
+        </li>
+        <!-- <li>
+          <a href="#"></a>
+        </li> -->
+      </ul>
+
+      <div class="footer-content">
+        <div class="footer-content-img">
+          <span class="footer-content-img-container">
+            <a href="">
+              <img src="img/logo-2.png" alt="微信" />
+            </a>
+          </span>
+        </div>
+
+        <div class="footer-content-detail">
+          <div class="footer-content-detail-title">
+            <span class="footer-content-detail-title-text">主办单位 : 教育部教育考试院</span>
+          </div>
+
+          <div class="footer-content-detail-container">
+            <a class="footer-content-detail-item">
+              <span class="footer-content-detail-text">京ICP备05064772号</span>
+            </a>
+
+            <a class="footer-content-detail-item">
+              <img src="img/logo-2.png" alt="">
+              <span class="footer-content-detail-text">京公网安备 11040202430017号</span>
+            </a>
+          </div>
+          
+          <span class="footer-content-detail-tips">请使用Edge、Chrome、Firefox、360(极速)等主流浏览器</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-link">
+      <div class="footer-link--title">
+        <span>友情链接：</span>
+      </div>
+      <div class="footer-link-content">
+        <span>中华人民共和国教育部</span>
+        <span>省级教育考试机构</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
