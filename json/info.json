@@ -16,6 +16,23 @@
       "oralExamNum": "--",
       "oralLevel": "--",
       "noticeTime": "8月14日6时至8月17日17时"
+    },
+    {
+      "id": 1062,
+      "mainTitle": "2026年上半年",
+      "subject": "CET6",
+      "uname": "周梦婷",
+      "idCard": "331523200606166220",
+      "school": "温州大学",
+      "scoreReport": 261233007003468,
+      "writtenExamNum": 330071251205727,
+      "writtenTotal": 427,
+      "writtenListening": 122,
+      "writtenReading": 186,
+      "writtenWriting": 119,
+      "oralExamNum": "--",
+      "oralLevel": "--",
+      "noticeTime": "8月14日6时至8月17日17时"
     }
   ]
 }
